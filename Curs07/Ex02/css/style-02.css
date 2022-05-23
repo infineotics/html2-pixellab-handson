@@ -1,0 +1,35 @@
+@keyframes animate {
+  20% {
+    /* translate(x, y) */
+    transform: translate(0, calc(100vh - 100px));
+  }
+
+  40% {
+    /* translate(x, y) */
+    transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+  }
+
+  60% {
+    /* translate(x, y) */
+    transform: translate(calc(100vw - 100px), 0);
+  }
+
+  80% {
+    /* translate(x, y) */
+    transform: translate(0, calc(100vh - 100px));
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+}
+
+.box-animate {
+  animation: animate 6s ease-in-out infinite alternate;
+}

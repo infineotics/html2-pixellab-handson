@@ -9,3 +9,21 @@
   height: 150px;
   border: 1px solid #000;
 }
+
+@for $i from 1 through 9 {
+  .box-0#{$i} {
+    border: #{$i}px solid black;
+  }
+}
+
+@for $i from 1 through 9 {
+  .box-#{$i}:nth-of-type(odd) {
+    border: 1px dotted black;
+  }
+}
+
+@for $i from 1 through 9 {
+  .box-#{$i}:nth-of-type(even) {
+    background-color: gray;
+  }
+}
