@@ -1,0 +1,17 @@
+{
+  "name": "ex03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass ./scss/app.scss ./css/style.css",
+    "watch": "sass --watch ./scss/app.scss:./css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "sass": "^1.52.1"
+  }
+}
